@@ -1,0 +1,177 @@
+{
+	"info": {
+		"_postman_id": "ed2a8337-83ed-4e58-ba50-d62c8905e2f8",
+		"name": "tagme",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "usuarios",
+			"item": [
+				{
+					"name": "Criar usuarios",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json"
+							},
+							{
+								"key": "X-AUTH-TOKEN",
+								"value": "1eb10662-b3bd-4e0a-82d5-70df1bbff87c"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"admin2\",\n    \"password\": \"password\",\n    \"active\": true\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/users/new",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"users",
+								"new"
+							]
+						},
+						"description": "# Criar usuários\n## Endpoint Post\n### Request \n```json\n{\n\"name\":\"string\",\n\"password\":\"string\",\n\"active\": \"boolean\"\n}\n```"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "receitas",
+			"item": [
+				{
+					"name": "Criar receitas",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYwNzI4NjM5MDczY2ZhNDMyYjU0YzQ5MiIsIm5hbWUiOiJhZG1pbiIsImlhdCI6MTYxODExODc0NSwiZXhwIjoxNjE4MTIyMzQ1fQ.vzqDURdAFsNve-h5xYAZvRl3_CPn6ZlE6SUY9BPWgeE",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "accept",
+								"value": "application/json"
+							},
+							{
+								"key": "X-AUTH-TOKEN",
+								"value": "1eb10662-b3bd-4e0a-82d5-70df1bbff87c"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"nome\": \"Arroz de Mariscos\",\n    \"ingredientes\": [\n        {\n            \"nome\": \"camarão seco\",\n            \"medida\": \"1/2 kg\"\n        },\n        {\n            \"nome\": \"sururu\",\n            \"medida\": \"1/2 kg\"\n        },\n        {\n            \"nome\": \"sanambi\",\n            \"medida\": \"1/2 kg\"\n        },\n        {\n            \"nome\": \"carne de carangueijo\",\n            \"medida\": \"1/2 kg\"\n        },\n        {\n            \"nome\": \"toucinho\",\n            \"medida\": \"1/2 kg\"\n        },\n        {\n            \"nome\": \"tomates\",\n            \"medida\": \"2 unidades\"\n        },\n        {\n            \"nome\": \"cebola\",\n            \"medida\": \"1 cabeça\"\n        },\n        {\n            \"nome\": \"pimentao\",\n            \"medida\": \"1 unidade\"\n        },\n        {\n            \"nome\": \"cheiro verde\",\n            \"medida\": \"1 unidade\"\n        },\n        {\n            \"nome\": \"alho\",\n            \"medida\": \"1/2 cabeça\"\n        },\n        {\n            \"nome\": \"sal\",\n            \"medida\": \"50g\"\n        },\n        {\n            \"nome\": \"limão\",\n            \"medida\": \"2 unidades\"\n        },\n        {\n            \"nome\": \"Azeitona\",\n            \"medida\": \"200g\"\n        },\n        {\n            \"nome\": \"Azeite\",\n            \"medida\": \"50ml\"\n        },\n        {\n            \"nome\": \"colorau\",\n            \"medida\": \"50g\"\n        }\n    ],\n    \"modoPreparo\": \"Preparar os mariscos temperando-os normalmente com todos os ingredientes picados em uma vasilha com óleo e azeite, coloque-os individualmente cada um em recipientes separados.\\nPreparar o arroz de toucinho.\\nFritar o toucinho na panela, quando este estiver pronto acrescentar o arroz, depois de dourar um pouco acrescentar alho, água e um pouco de massa de tomate ou colorau\\npara dar uma cor, esperar ficar pronto.\\nAgora faça uma mistura de todos os mariscos já preparados e acrescente creme de leite abundante e leite de coco, se precisar colocar um pouco de água para não ficar uma mistura seca.\\nEm um recepiente maior acomodande alternadamente uma camada de mariscos (mistura pronta com creme de leite e leite de coco) e uma de arroz de toucinho, depois decore com fatias de tomate e pimentão vermelho ou amarelo, pouvilhe queijo ralado e leve ao forno por 30 minutos ou até dourar.\",\n    \"descricao\":\"Receita para aprender a fazer arroz de Marciscos. Clica e confira!\",\n    \"image\": \"prato-arroz-grande.jpg\" \n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/receitas/new",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"receitas",
+								"new"
+							]
+						},
+						"description": "# Criar receitas\n\n## Endpoint POST\n\n### Request\n```json\n{\n    \"nome\": \"string\",\n    \"ingredientes\":[{\n        \"nome\":\"string\",\n        \"medida\":\"string\"\n    }],\n    \"modoPreparo\":\"string\",\n    \"descricao\":\"string\",\n    \"image\": \"string\"\n}\n```\n### Response\n```json\n{\n    \"nome\": \"string\",\n    \"ingredientes\":[{\n        \"nome\":\"string\",\n        \"medida\":\"string\"\n    }],\n    \"modoPreparo\":\"string\",\n    \"descricao\":\"string\",\n}\n```"
+					},
+					"response": []
+				},
+				{
+					"name": "Listar Receitas",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYwNzI4NjM5MDczY2ZhNDMyYjU0YzQ5MiIsIm5hbWUiOiJhZG1pbiIsImlhdCI6MTYxODExODc0NSwiZXhwIjoxNjE4MTIyMzQ1fQ.vzqDURdAFsNve-h5xYAZvRl3_CPn6ZlE6SUY9BPWgeE",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"teste\": \"teste\"}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3003/v1/webhook",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3003",
+							"path": [
+								"v1",
+								"webhook"
+							]
+						},
+						"description": "# Listar Receitas\n\n## GET receitas/all\n\n### Request\n\n### Response\n```json\n[{\n    \"nome\": \"string\",\n    \"ingredientes\":[{\n        \"nome\":\"string\",\n        \"medida\":\"string\"\n    }],\n    \"modoPreparo\":\"string\",\n    \"descricao\":\"string\",\n}]\n```"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"name\":\"admin\",\n\"password\":\"password\"} ",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/auth/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"auth",
+						"login"
+					]
+				},
+				"description": "# Login \n\n## POST auth/login\n\n### Request \n```json\n{\n    \"name\":\"string\",\n    \"password\":\"string\"\n}\n```\n\n### Response \n```json\n    \"token\": \"string\"\n```"
+			},
+			"response": []
+		}
+	]
+}

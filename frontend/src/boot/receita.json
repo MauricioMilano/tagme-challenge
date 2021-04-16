@@ -1,0 +1,68 @@
+{
+  "nome": "Arroz de Mariscos",
+  "ingredientes": [
+    {
+      "nome": "camarão seco",
+      "medida": "1/2 kg"
+    },
+    {
+      "nome": "sururu",
+      "medida": "1/2 kg"
+    },
+    {
+      "nome": "sanambi",
+      "medida": "1/2 kg"
+    },
+    {
+      "nome": "carne de carangueijo",
+      "medida": "1/2 kg"
+    },
+    {
+      "nome": "toucinho",
+      "medida": "1/2 kg"
+    },
+    {
+      "nome": "tomates",
+      "medida": "2 unidades"
+    },
+    {
+      "nome": "cebola",
+      "medida": "1 cabeça"
+    },
+    {
+      "nome": "pimentao",
+      "medida": "1 unidade"
+    },
+    {
+      "nome": "cheiro verde",
+      "medida": "1 unidade"
+    },
+    {
+      "nome": "alho",
+      "medida": "1/2 cabeça"
+    },
+    {
+      "nome": "sal",
+      "medida": "50g"
+    },
+    {
+      "nome": "limão",
+      "medida": "2 unidades"
+    },
+    {
+      "nome": "Azeitona",
+      "medida": "200g"
+    },
+    {
+      "nome": "Azeite",
+      "medida": "50ml"
+    },
+    {
+      "nome": "colorau",
+      "medida": "50g"
+    }
+  ],
+  "modoPreparo": "Preparar os mariscos temperando-os normalmente com todos os ingredientes picados em uma vasilha com óleo e azeite, coloque-os individualmente cada um em recipientes separados.\nPreparar o arroz de toucinho.\nFritar o toucinho na panela, quando este estiver pronto acrescentar o arroz, depois de dourar um pouco acrescentar alho, água e um pouco de massa de tomate ou colorau\npara dar uma cor, esperar ficar pronto.\nAgora faça uma mistura de todos os mariscos já preparados e acrescente creme de leite abundante e leite de coco, se precisar colocar um pouco de água para não ficar uma mistura seca.\nEm um recepiente maior acomodande alternadamente uma camada de mariscos (mistura pronta com creme de leite e leite de coco) e uma de arroz de toucinho, depois decore com fatias de tomate e pimentão vermelho ou amarelo, pouvilhe queijo ralado e leve ao forno por 30 minutos ou até dourar.",
+  "descricao": "Receita para aprender a fazer arroz de Marciscos. Clica e confira!",
+  "image": "prato-arroz-grande.jpg"
+}

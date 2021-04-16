@@ -1,0 +1,14 @@
+{
+  "name": "cocobambu-fe",
+  "version": "1.0.0",
+  "description": "Executável do frontend pelo docker",
+  "main": "index.js",
+  "scripts": {
+		"start": "node ."
+  },
+  "author": "Mauricio Milano",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
