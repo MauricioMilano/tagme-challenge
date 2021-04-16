@@ -16,6 +16,7 @@ O mesmo acontecerá com o backend, iniciando uma imagem docker. Para isso, execu
 bash init-backend.sh
 ```
 
+Após as 2 aplicações subirem, você pode visualizar [Clicando aqui](http://localhost:8080/).
 
 Caso o docker não funcione, pode rodar da seguinte forma:
 - frontend
@@ -32,3 +33,5 @@ npm install
 # npm start
 npm run start:prod
 ```
+
+OBS: É necessário que as portas 8080 e 3003 estejam livres para que as aplicações possam subir.
