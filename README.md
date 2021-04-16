@@ -34,4 +34,8 @@ npm install
 npm run start:prod
 ```
 
+### Credenciais da aplicação
+- usuario: admin
+- senha: password
+
 OBS: É necessário que as portas 8080 e 3003 estejam livres para que as aplicações possam subir.
